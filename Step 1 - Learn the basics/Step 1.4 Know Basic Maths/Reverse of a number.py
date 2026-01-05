@@ -1,3 +1,6 @@
+# https://www.geeksforgeeks.org/problems/reverse-digit0316/
+# https://www.naukri.com/code360/problems/reverse-of-a-number_624652?leftPanelTabValue=PROBLEM
+
 def ReverseNumber(n):
     revNum = 0
 
