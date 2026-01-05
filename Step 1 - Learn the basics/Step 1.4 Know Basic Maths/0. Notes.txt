@@ -1,0 +1,46 @@
+# Extraction of Digits
+
+n = 7789
+
+n = 7789 % 10 -> gives the last digit (9)
+n = 7789 // 10 -> gives the N except the last extracted digit
+
+so,
+
+n = 7789 % 10 = 9
+     	/10 -> n = 778
+n = 778 % 10 = 8
+    	/10 -> n = 77
+n = 77 % 10 = 7
+    	/10 -> n = 7
+n = 7 % 10 = 7
+    	/10 -> n = 0
+
+extracted digits are 9877
+
+
+# to extract the digits that ensuring, that the reversed number has no leading zeroes.
+
+eg: 
+Input : n = 200
+Output: 2
+Explanation: By reversing the digits of number, number will change into 2.
+
+The Formula: (revNum * 10) + last_digit
+
+This formula performs two distinct actions:
+
+    'revNum * 10' (The Shift): Multiplying an integer by 10 shifts all its digits one place to the left.
+
+        Example: If revNum is 3, 3 * 10 becomes 30. The 3 moved from the units place to the tens place, leaving a 0 (an empty slot) at the end.
+
+    '+ last_digit' (The Add): This fills that empty slot (0) with the new digit you just extracted.
+n = 7789000
+
+1. 0(from 7789000) 0*10+0 = 0
+2. 0(from 7789000) 0*10+0 = 0               5. 8(from 7789000) 9*10+8 = 98
+3. 0(from 7789000) 0*10+0 = 0               6. 7(from 7789000) 98*10+7 = 987
+4. 9(from 7789000) 0*10+9 = 9               7. 7(from 7789000) 987*10+7 = 9877
+
+
+
