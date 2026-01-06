@@ -43,4 +43,16 @@ n = 7789000
 4. 9(from 7789000) 0*10+9 = 9               7. 7(from 7789000) 987*10+7 = 9877
 
 
+Euclidean Algorithm
 
+gcd (n1, n2) = gcd (n1 - n2, n2)
+OR
+gcd (a, b) = gcd (a - b, b)
+
+But, if we try to get gcd (52,10) then the steps would take lots of steps.
+So, to improve the T.C we can do just a small change in it - gcd (52%10, 10)
+
+what does this mean? -> gcd (a, b) -> gcd (a % b, b)
+but here the greater must be a and smaller must be b
+
+The time complexity of this would be O (log phi (min(a,b)))

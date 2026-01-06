@@ -17,6 +17,3 @@ def isPalindrome(n):
 n = int(input("Enter N value: "))
 print(isPalindrome(n))
 
-
-n = int(input("Enter N value: "))
-print(isPalindrome(n))
