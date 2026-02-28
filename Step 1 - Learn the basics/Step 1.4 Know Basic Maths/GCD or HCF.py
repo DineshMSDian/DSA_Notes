@@ -13,4 +13,8 @@ def GCD_EUCLIDEAN(a, b):
 n1 = int(input("N1: "))
 n2 = int(input("N2: "))
 print(GCD(n1, n2))
+<<<<<<< HEAD
 print(GCD_EUCLIDEAN(n1,n2))
+=======
+print(GCD_EUCLIDEAN(n1,n2))
+>>>>>>> master

@@ -1,0 +1,20 @@
+# Brute Force Approach
+
+"""
+def containsDuplicate(nums):
+    temp = ()
+    #nums = [1,2,3,1]
+    for i in range(len(nums)):
+        for j in range(i + 1, len(nums)):
+            if nums[i] == nums[j]:
+                return True
+    return False
+"""
+
+# Optimal Approach
+def containsDuplicate(nums):
+    return len(nums) != len(set(nums))
+
+
+nums = [1,2,3,1]
+print(containsDuplicate(nums))
